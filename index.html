@@ -739,7 +739,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Move<span>lio</span></div>
-  <button class="nav-cta" onclick="document.getElementById('hero-email').focus(); document.getElementById('hero-email').scrollIntoView({behavior:'smooth'})">
+  <button class="nav-cta" onclick="document.getElementById('hero-email').scrollIntoView({behavior:'smooth'}); setTimeout(function(){ document.getElementById('hero-email').focus(); }, 500);">
     Rejoindre la liste d'attente
   </button>
 </nav>
