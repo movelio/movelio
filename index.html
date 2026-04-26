@@ -760,11 +760,14 @@
     Movelio est le premier coach IA conçu pour les personnes en surpoids, seniors, maladies chroniques et post-blessure. Sans jugement. Sans honte. Juste du progrès.
   </p>
 
-  <div class="hero-form">
-    <input type="email" id="hero-email" class="hero-input" placeholder="Ton adresse email" />
-    <button class="hero-btn" onclick="handleSignup('hero-email', 'hero-success')">
-      Je veux être parmi les premiers →
-    </button>
+  <div class="hero-form" style="display:block;max-width:560px;">
+    <form id="sib-form" method="POST" action="https://4dc0c5b0.sibforms.com/serve/MUIFAOcTbkj9VodDKh82tiMqUsISbUxKUVYCSQioxLabUextQYPIc2wHEaRO3-KtzhDUmJ2hLrK5dc1WzI6PNmM0Ofb-F14EEFNs7gf-J7DgwewS5R8K_zkI5SUziQ2vtSzpfYDbLkqHi56sDe_C1oC-mrZW74C9yMc05HVp2zDczVMZw_l4FV8sVrtEv4t8gcktQDA87kz5HLG0_A==" style="display:flex;gap:10px;flex-wrap:wrap;">
+      <input type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Ton adresse email" data-required="true" required class="hero-input" style="flex:1;min-width:240px;" />
+      <button type="submit" class="hero-btn">Je veux être parmi les premiers →</button>
+      <input type="text" name="email_address_check" value="" style="display:none;">
+      <input type="hidden" name="locale" value="fr">
+      <input type="hidden" name="html_type" value="simple">
+    </form>
   </div>
   <div id="hero-success" class="success-msg">
     ✓ Super ! Tu es sur la liste. On te contacte en priorité au lancement.
@@ -1031,13 +1034,13 @@
   <h2>Prêt à bouger<br><em>à ton rythme ?</em></h2>
   <p>Rejoins les premières personnes à découvrir Movelio.<br>Lancement été 2026 — places limitées.</p>
   <div class="final-form">
-    <input type="email" id="final-email" class="final-input" placeholder="Ton adresse email" />
-    <button class="final-btn" onclick="handleSignup('final-email', 'final-success')">
-      Je rejoins la liste d'attente
-    </button>
-  </div>
-  <div id="final-success" class="success-msg" style="background:rgba(255,255,255,0.2);color:#fff;display:none;max-width:400px;margin:1rem auto 0;">
-    ✓ Parfait ! Tu es sur la liste. À très bientôt.
+    <form id="sib-form-2" method="POST" action="https://4dc0c5b0.sibforms.com/serve/MUIFAOcTbkj9VodDKh82tiMqUsISbUxKUVYCSQioxLabUextQYPIc2wHEaRO3-KtzhDUmJ2hLrK5dc1WzI6PNmM0Ofb-F14EEFNs7gf-J7DgwewS5R8K_zkI5SUziQ2vtSzpfYDbLkqHi56sDe_C1oC-mrZW74C9yMc05HVp2zDczVMZw_l4FV8sVrtEv4t8gcktQDA87kz5HLG0_A==" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+      <input type="text" name="EMAIL" autocomplete="off" placeholder="Ton adresse email" required class="final-input" />
+      <button type="submit" class="final-btn">Je rejoins la liste d'attente</button>
+      <input type="text" name="email_address_check" value="" style="display:none;">
+      <input type="hidden" name="locale" value="fr">
+      <input type="hidden" name="html_type" value="simple">
+    </form>
   </div>
   <p class="final-note">Aucune CB requise · Résiliation en 1 clic · Données protégées RGPD</p>
 </section>
